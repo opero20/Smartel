@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("_fonts/bubblegum-sans-regular.otf");
+}
+body{height: 100vh; display: flex; text-align: center; justify-content: center; background-image: url(img/chris-kursikowski-ze5wHM9kplc-unsplash.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;}
+/* My code begin here! */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contentor{
+    min-height: 100vh;
+    
+    padding: 30px;
+}
+.titulo{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+.titulo span{color: red;}
+
+
+.cartao{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(51, 51, 51, 0.602);
+    border-radius: 10px;
+    font-family: 'Fontelogo';
+   /* box-shadow: 100px solid black;*/
+   
+}
+.cartao marquee{color: antiquewhite; font-size: 20px;}
+
+.bairros{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    border-radius: 50px;
+}
+
+.bairro{
+    border-radius: 50px;
+    margin: 5px;
+    background-color: rgb(51, 51, 51, 0.602);
+    box-shadow: 0 0 10px black;
+    transition: transform 100ms ease-in-out;
+    font-family: 'Fontelogo';
+    color: white;
+}
+
+.bairro:hover{
+    transform: scale(1.05);
+}
+.bairro-content{
+    padding: 30px;
+}
+.bairro img{
+    max-width: 100%;
+    border-radius: 50px;
+}
